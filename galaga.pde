@@ -14,11 +14,11 @@ class Point {
 Point[] stars;
 
 void setup() {
-  size(600, 600);
+  size(1024, 768);
 
   stars = new Point[100];
   for (int i=0; i<stars.length; i++) {
-    stars[i] = new Point(random(600), random(600));
+    stars[i] = new Point(random(width), random(height));
   }
 }
 
